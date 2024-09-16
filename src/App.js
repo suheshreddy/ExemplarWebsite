@@ -20,6 +20,7 @@ import BlogGalleryPost from './pages/blog/blogGalleryPost';
 import BlogDetail from './pages/blog/blogDetail';
 import BlogBlockquotePost from './pages/blog/blogBlockquotePost';
 import BlogAudioPost from './pages/blog/blogAudioPost';
+import Industry  from './component/Industry';
 import Switch from './component/Switch';
 
 export default function App() {
@@ -29,19 +30,13 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Navigate to="/index" />} />
                 <Route exact path="/index" element={<IndexItSolution />} />
-
                 <Route exact path="/user-notification" element={<UserNotification />} />
                 <Route exact path="/user-payment" element={<UserPayment />} />
                 <Route exact path="/user-profile" element={<UserProfile />} />
-    
-
-
-
-
-        
                 <Route exact path="/contact-two" element={<ContactTwo />} />
                 <Route exact path="/contact-one" element={<ContactOne />} />
                 <Route exact path="/contact-detail" element={<ContactDetail />} />
+                <Route exact path="/industry/:id" element={<Industry />} />
                 <Route exact path="/contact-detail/:id" element={<ContactDetail />} />
                 <Route exact path="/blog" element={<Blog />} />
                 <Route exact path="/blog-youtube-post" element={<BlogYoutubePost />} />
@@ -55,8 +50,6 @@ export default function App() {
                 <Route exact path="/blog-detail/:id" element={<BlogDetail />} />
                 <Route exact path="/blog-blockquote-post" element={<BlogBlockquotePost />} />
                 <Route exact path="/blog-audio-post" element={<BlogAudioPost />} />
-
-       
             </Routes>
         
         </BrowserRouter>

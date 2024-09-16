@@ -170,42 +170,42 @@ export const accordionData = [
 export const about=[
     {
         icon:BiLineChart,
-        feature: 'Data Visualization and Dashboard Design',
+        feature: 'Application Integration',
         url: 'blog'
     },
     {
         icon:LiaCrosshairsSolid,
-        feature: 'Data Integration and ETL Processes',
+        feature: 'Artificial Intelligence',
         url: 'blog'
     },
     {
         icon:FiAirplay,
-        feature: 'Data Governance and Compliance',
+        feature: 'Data Analytics',
         url: 'blog'
     },
     {
         icon: GoRocket,
-        feature: 'Data Strategy and Roadmap Development',
+        feature: 'Data Engineering',
         url: 'blog'
     },
     {
         icon:GoClock,
-        feature: 'Real-Time Data Processing and Analytics',
+        feature: 'Digital Workflows',
         url: 'blog'
     },
     {
         icon: LuUsers,
-        feature: 'Strategic Staffing Solutions',
+        feature: 'Cyber Security',
         url: 'blog'
     },
     {
         icon:FiFileText,
-        feature: 'Machine Learning and AI Solutions',
+        feature: 'Infrastructure Cloud',
         url: 'blog'
     },
     {
         icon: LuSearch,
-        feature: 'Advanced Analytics and Predictive Modeling',
+        feature: 'Robotic Process Automation',
         url: 'blog'
     },
 ]

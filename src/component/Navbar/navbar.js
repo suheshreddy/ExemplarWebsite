@@ -99,6 +99,25 @@ export default function Navbar(props) {
                          <li id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                 <ul className={`navigation-menu ${navClass} ${navJustify}`}>
                     <li className={manu === "index" || "" ? "active" : ""}><Link to="/index" className="sub-menu-item">Home</Link></li>
+                    <li className={`${["ui-components", "documentation","changelog"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}>
+                        <Link to="#">What we do</Link><span className="menu-arrow"></span>
+                        <ul className="submenu">
+                            <li className={manu === "ui-components" || "" ? "active" : ""}><Link to="/ui-components" className="sub-menu-item">Components</Link></li>
+                            <li className={manu === "documentation" || "" ? "active" : ""}><Link to="/documentation" className="sub-menu-item">Documentation</Link></li>
+                            <li className={manu === "changelog" || "" ? "active" : ""}><Link to="/changelog" className="sub-menu-item">Changelog</Link></li>
+                        </ul>
+                    </li>
+
+                    <li className={`${["ui-components", "documentation","changelog"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}>
+                        <Link to="#">Industries</Link><span className="menu-arrow"></span>
+                        <ul className="submenu">
+                            <li className={manu === "ui-components" || "" ? "active" : ""}><Link to="/ui-components" className="sub-menu-item">Components</Link></li>
+                            <li className={manu === "documentation" || "" ? "active" : ""}><Link to="/documentation" className="sub-menu-item">Documentation</Link></li>
+                            <li className={manu === "changelog" || "" ? "active" : ""}><Link to="/changelog" className="sub-menu-item">Changelog</Link></li>
+                        </ul>
+                    </li>
+                    <li className={manu === "contact-one" || "" ? "active" : ""}><Link to="/contact-one" className="sub-menu-item">careers</Link></li>
+                    <li className={manu === "contact-one" || "" ? "active" : ""}><Link to="/contact-one" className="sub-menu-item">Who we are</Link></li>
 
                     <li className={manu === "contact-one" || "" ? "active" : ""}><Link to="/contact-one" className="sub-menu-item">Contact</Link></li>
                 </ul>
