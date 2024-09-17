@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 import Navbar from './Navbar/navbar';
 import * as Icon from 'react-feather';
 import { useParams } from "react-router-dom";
-
+import IndustryHero from "../component/IndustryHero";
+ 
 import {MdKeyboardArrowRight} from "../assets/icons/icons"
 export default function Industry() {
 
@@ -44,7 +45,7 @@ export default function Industry() {
             <Navbar navClass="nav-light" />
 
 
-            <section className="relative table w-full py-36 bg-[url('../../assets/images/company/aboutus.jpg')] bg-center bg-no-repeat bg-cover">
+            <section className="relative table w-full py-32 bg-[url('../../assets/images/company/aboutus.jpg')] bg-center bg-no-repeat bg-cover">
                 <div className="absolute inset-0 bg-black opacity-75"></div>
                 <div className="container relative">
                     <div className="grid grid-cols-1 pb-8 text-center mt-10">
@@ -61,9 +62,7 @@ export default function Industry() {
                 </div>
             </section>
 
-
-
-      
+            <IndustryHero />
         </>
     ) : (<div>Not</div>)
 }
