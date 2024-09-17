@@ -21,6 +21,7 @@ import BlogDetail from './pages/blog/blogDetail';
 import BlogBlockquotePost from './pages/blog/blogBlockquotePost';
 import BlogAudioPost from './pages/blog/blogAudioPost';
 import Industry  from './component/Industry';
+import WhatWeDo from './component/whatWeDo'
 import Switch from './component/Switch';
 
 export default function App() {
@@ -36,7 +37,8 @@ export default function App() {
                 <Route exact path="/contact-two" element={<ContactTwo />} />
                 <Route exact path="/contact-one" element={<ContactOne />} />
                 <Route exact path="/contact-detail" element={<ContactDetail />} />
-                <Route exact path="/industry/:id" element={<Industry />} />
+                <Route exact path="/industries/:id" element={<Industry />} />
+                <Route exact path="/what-we-do/:id" element={<WhatWeDo />} />
                 <Route exact path="/contact-detail/:id" element={<ContactDetail />} />
                 <Route exact path="/blog" element={<Blog />} />
                 <Route exact path="/blog-youtube-post" element={<BlogYoutubePost />} />

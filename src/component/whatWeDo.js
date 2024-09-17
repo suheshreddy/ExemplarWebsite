@@ -4,46 +4,59 @@ import { Link } from 'react-router-dom'
 import Navbar from './Navbar/navbar';
 import * as Icon from 'react-feather';
 import { useParams } from "react-router-dom";
-import IndustryHero from "../component/IndustryHero";
+import IndustryHero from "./IndustryHero";
 import { startupServices } from '../data/dataTwo';
-import Footer from '../component/Footer/footer';
+import Footer from './Footer/footer';
 
 import {MdKeyboardArrowRight} from "../assets/icons/icons"
 export default function Industry() {
 
     const { id } = useParams();
 
-    const industries = {
-      "banking-and-financial-services": {
-        name: "Banking & Financial Services",
-        description: "Secure & Trusted financial services.",
-      },
-      insurance: {
-        name: "Insurance",
-        description: "Comprehensive Coverage tailored for insurance needs.",
-      },
-      "retail-and-consumer-goods": {
-        name: "Retail & CPG",
-        description: "Retail Innovation with cutting-edge solutions.",
-      },
-      manufacturing: {
-        name: "Manufacturing",
-        description: "Advanced solutions for modern manufacturing.",
-      },
-      "energy-utilities": {
-        name: "Energy & Utilities",
-        description: "Powerful Solutions for efficient energy management.",
-      },
-      "life-sciences-healthcare": {
-        name: "Life Sciences & Healthcare",
-        description: "Supporting healthcare excellence.",
-      },
-    };
+    const whatWeDo = {
+        "applications-integration": {
+          name: "Applications Integration",
+          description: "Seamless integration of business applications for enhanced efficiency.",
+        },
+        "artificial-intelligence": {
+          name: "Artificial Intelligence",
+          description: "Innovative AI solutions to drive smarter business decisions.",
+        },
+        "data-analytics": {
+          name: "Data Analytics",
+          description: "Turn data into insights with cutting-edge analytics tools.",
+        },
+        "data-engineering": {
+          name: "Data Engineering",
+          description: "Robust data infrastructure for optimized business performance.",
+        },
+        "digital-workflows": {
+          name: "Digital Workflows",
+          description: "Streamline processes with automated and digital workflows.",
+        },
+        "cyber-security": {
+          name: "Cyber Security",
+          description: "Protect your digital assets with world-class security solutions.",
+        },
+        "infrastructure-cloud": {
+          name: "Infrastructure Cloud",
+          description: "Scalable cloud solutions for modern infrastructure needs.",
+        },
+        "robotics-process-automation": {
+          name: "Robotics Process Automation",
+          description: "Automate repetitive tasks with RPA to enhance productivity.",
+        },
+        "customer-experience": {
+          name: "Customer Experience",
+          description: "Deliver exceptional customer service and experiences.",
+        },
+      };
+      
     
 
-      const industry = industries[id.toLowerCase()];
+      const service = whatWeDo[id.toLowerCase()];
 
-    return industry ? (
+    return service ? (
         <>
             <Navbar navClass="nav-light" />
 

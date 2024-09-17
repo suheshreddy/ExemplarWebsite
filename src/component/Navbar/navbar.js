@@ -99,23 +99,63 @@ export default function Navbar(props) {
                          <li id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                 <ul className={`navigation-menu ${navClass} ${navJustify}`}>
                     <li className={manu === "index" || "" ? "active" : ""}><Link to="/index" className="sub-menu-item">Home</Link></li>
-                    <li className={`${["ui-components", "documentation","changelog"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}>
-                        <Link to="#">What we do</Link><span className="menu-arrow"></span>
-                        <ul className="submenu">
-                            <li className={manu === "ui-components" || "" ? "active" : ""}><Link to="/ui-components" className="sub-menu-item">Components</Link></li>
-                            <li className={manu === "documentation" || "" ? "active" : ""}><Link to="/documentation" className="sub-menu-item">Documentation</Link></li>
-                            <li className={manu === "changelog" || "" ? "active" : ""}><Link to="/changelog" className="sub-menu-item">Changelog</Link></li>
-                        </ul>
-                    </li>
+                    <li className={`${["ui-components", "documentation", "changelog"].includes(manu) ? "active" : ""} has-submenu parent-menu-item`}>
+  <Link to="#">What we do</Link><span className="menu-arrow"></span>
+  <ul className="submenu">
+    <li className={manu === "applications-integration" ? "active" : ""}>
+      <Link to="/what-we-do/applications-integration" className="sub-menu-item">Applications Integration</Link>
+    </li>
+    <li className={manu === "artificial-intelligence" ? "active" : ""}>
+      <Link to="/what-we-do/artificial-intelligence" className="sub-menu-item">Artificial Intelligence</Link>
+    </li>
+    <li className={manu === "data-analytics" ? "active" : ""}>
+      <Link to="/what-we-do/data-analytics" className="sub-menu-item">Data Analytics</Link>
+    </li>
+    <li className={manu === "data-engineering" ? "active" : ""}>
+      <Link to="/what-we-do/data-engineering" className="sub-menu-item">Data Engineering</Link>
+    </li>
+    <li className={manu === "digital-workflows" ? "active" : ""}>
+      <Link to="/what-we-do/digital-workflows" className="sub-menu-item">Digital Workflows</Link>
+    </li>
+    <li className={manu === "cyber-security" ? "active" : ""}>
+      <Link to="/what-we-do/cyber-security" className="sub-menu-item">Cyber Security</Link>
+    </li>
+    <li className={manu === "infrastructure-cloud" ? "active" : ""}>
+      <Link to="/what-we-do/infrastructure-cloud" className="sub-menu-item">Infrastructure Cloud</Link>
+    </li>
+    <li className={manu === "robotics-process-automation" ? "active" : ""}>
+      <Link to="/what-we-do/robotics-process-automation" className="sub-menu-item">Robotics Process Automation</Link>
+    </li>
+    <li className={manu === "customer-experience" ? "active" : ""}>
+      <Link to="/what-we-do/customer-experience" className="sub-menu-item">Customer Experience</Link>
+    </li>
+  </ul>
+</li>
 
-                    <li className={`${["ui-components", "documentation","changelog"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}>
-                        <Link to="#">Industries</Link><span className="menu-arrow"></span>
-                        <ul className="submenu">
-                            <li className={manu === "ui-components" || "" ? "active" : ""}><Link to="/ui-components" className="sub-menu-item">Components</Link></li>
-                            <li className={manu === "documentation" || "" ? "active" : ""}><Link to="/documentation" className="sub-menu-item">Documentation</Link></li>
-                            <li className={manu === "changelog" || "" ? "active" : ""}><Link to="/changelog" className="sub-menu-item">Changelog</Link></li>
-                        </ul>
-                    </li>
+<li className={`${["banking-and-financial-services", "insurance", "retail-and-cpg", "manufacturing", "energy-utilities", "life-sciences-healthcare"].includes(manu) ? "active" : ""} has-submenu parent-menu-item`}>
+  <Link to="#">Industries</Link><span className="menu-arrow"></span>
+  <ul className="submenu">
+    <li className={manu === "banking-and-financial-services" ? "active" : ""}>
+      <Link to="/industries/banking-and-financial-services" className="sub-menu-item">Banking & Financial Services</Link>
+    </li>
+    <li className={manu === "insurance" ? "active" : ""}>
+      <Link to="/industries/insurance" className="sub-menu-item">Insurance</Link>
+    </li>
+    <li className={manu === "retail-and-cpg" ? "active" : ""}>
+      <Link to="/industries/retail-and-consumer-goods" className="sub-menu-item">Retail & CPG</Link>
+    </li>
+    <li className={manu === "manufacturing" ? "active" : ""}>
+      <Link to="/industries/manufacturing" className="sub-menu-item">Manufacturing</Link>
+    </li>
+    <li className={manu === "energy-utilities" ? "active" : ""}>
+      <Link to="/industries/energy-utilities" className="sub-menu-item">Energy & Utilities</Link>
+    </li>
+    <li className={manu === "life-sciences-healthcare" ? "active" : ""}>
+      <Link to="/industries/life-sciences-healthcare" className="sub-menu-item">Life Sciences & Healthcare</Link>
+    </li>
+  </ul>
+</li>
+
                     <li className={manu === "contact-one" || "" ? "active" : ""}><Link to="/contact-one" className="sub-menu-item">careers</Link></li>
                     <li className={manu === "contact-one" || "" ? "active" : ""}><Link to="/contact-one" className="sub-menu-item">Who we are</Link></li>
 
