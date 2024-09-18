@@ -7,6 +7,10 @@ import { useParams } from "react-router-dom";
 import IndustryHero from "../component/IndustryHero";
 import { startupServices } from '../data/dataTwo';
 import Footer from '../component/Footer/footer';
+import ab03 from '../assets/images/about/ab03.jpg';
+
+import {LiaCrosshairsSolid, BiLineChart, FiAirplay,FiFileText, GoRocket,GoClock, LuUsers,LuSearch, BiUserVoice, BiCreditCardAlt, FaRegQuestionCircle, MdOutlineCollectionsBookmark, HiOutlineCog6Tooth,RiPresentationFill,LiaFileInvoiceDollarSolid,RiMoneyCnyBoxLine, MdOutlineJoinInner, MdOutlineSelectAll, AiOutlineFire,LiaRulerCombinedSolid, TbBuildingSkyscraper,TbBuildingMonument, LiaMoneyCheckAltSolid, LiaUniversitySolid, LuPizza, FaRegBuilding,BiWater,LiaDropbox,MdCenterFocusWeak,AiOutlineDollar,BsShieldCheck,FiThumbsUp,TbKeyboardShow,TbAward,BsBookmark,FaRegStar,LuClock} from '../assets/icons/icons'
+
 
 import {MdKeyboardArrowRight} from "../assets/icons/icons"
 export default function Industry() {
@@ -17,26 +21,162 @@ export default function Industry() {
       "banking-and-financial-services": {
         name: "Banking & Financial Services",
         description: "Secure & Trusted financial services.",
+        hero: {
+            image:ab03,
+            heading:"Banking Technology Improvements for the Upcoming Digital Age",
+            description:"TekDallas is a technology partner for many midsize banks and financial services companies. At various stages of the project lifecycle, each of these businesses relies on our technical and domain expertise for their unique outsourcing requirements. Core banking, multi-channel banking, credit and finance, payments, cash/investment management, trade finance, tax, risk, and governance are some of the services we offer. We collaborate with world-class technology providers like Microsoft, Oracle, and Functions to provide comprehensive end-user solutions. In addition, we are able to offer our clients high-quality banking IT solutions thanks to our exclusive frameworks, tools, and platforms derived from our extensive project experience."
+        },
+
+        services:[
+            {
+                icon:RiPresentationFill,
+                title:"Lending & Financing",
+                desc:"We shape every lending transaction to meet our clients' unique needs."
+            },
+            {
+                icon:LiaFileInvoiceDollarSolid,
+                title:"Structured Finance & Securitization",
+                desc:"We understand the business, regulatory, accounting, tax and administrative issues that come with structured finance and securitization transactions for all asset classes."
+            },
+            {
+                icon:LiaMoneyCheckAltSolid,
+                title:"Project Finance",
+                desc:"Project financing is by its very nature complex. We have the knowledge, skill, and diligence to counsel foreign lenders and investors on conventional, cutting-edge, and complex transactions."
+            }
+        ]
       },
       insurance: {
         name: "Insurance",
         description: "Comprehensive Coverage tailored for insurance needs.",
+        hero: {
+            image:ab03,
+            heading:"Our Wide Range of Services Will Get You Into the Future of Insurance.",
+            description:"In addition to its core technical expertise in a variety of platforms, TekDallas contributes valuable insurance knowledge to the project and offers a consultative approach. Utilizing robust practices and industry-standard frameworks, we offer comprehensive development and testing services for policy management, claims management, underwriting, and billing. Through numerous insurance-related product partnerships, TekDallas has been able to use product and practice excellence to provide superior customer service."
+        },
+        services:[
+            {
+                icon:RiPresentationFill,
+                title:"Commercial Insurance",
+                desc:"Our extensive knowledge and expertise enable us to comprehend, anticipate, and assist in mitigating the risks you face. â€‹"
+            },
+            {
+                icon:LiaFileInvoiceDollarSolid,
+                title:"Personal Insurance",
+                desc:"Through our partners, we provide a wide variety of personal insurance solutions."
+            },
+            {
+                icon:LiaMoneyCheckAltSolid,
+                title:"Digital Insurance",
+                desc:"Our main objective is to close the protection gap by making insurance products easier to use and more widely available. â€‹â€‹"
+            }
+        ]
       },
       "retail-and-consumer-goods": {
         name: "Retail & CPG",
         description: "Retail Innovation with cutting-edge solutions.",
+        hero: {
+            image:ab03,
+            heading:"We have helped numerous large and small businesses successfully target their audience, increase traffic, and expand their reach.",
+            description:"The development of the retail and e-commerce sectors is being fueled by technological advancements. We at TekDallas create mobile and web applications and solutions that improve user engagement and efficiency, enabling businesses to expand like never before.The retail and e-commerce industries are implementing a lot of new things, like 24/7 customer support, automation, online shopping portals, faster response times, and so on. Simply adhering to the technology ensures that everything runs smoothly. Additionally, our prominent developers and designers provide solutions for e-commerce and retail app development that are more user-friendly and visually appealing to our clients."
+        },
+        services:[
+            {
+                icon:RiPresentationFill,
+                title:"Omnichannel Retailing",
+                desc:"Retailers are leveraging technology to provide a unified shopping experience across all channels, including physical stores, e-commerce, and mobile."
+            },
+            {
+                icon:LiaFileInvoiceDollarSolid,
+                title:"Supply Chain Analytics",
+                desc:"Our advanced analytics solutions are highly efficient and provide richer supply chain intelligence to prepare your retail and CPG business for disruption. "
+            },
+            {
+                icon:LiaMoneyCheckAltSolid,
+                title:"Innovation in Retail",
+                desc:"Tek Dallas' data analytics solutions enable retail and CPG companies to use descriptive, prescriptive, predictive, and cognitive analytics to improve predictions based on consumer behavior and to stay ahead in a digitally disrupted world."
+            }
+        ]
       },
       manufacturing: {
         name: "Manufacturing",
         description: "Advanced solutions for modern manufacturing.",
+        hero: {
+            image:ab03,
+            heading:"The manufacturing sector finds it difficult enough to meet rising customer demands without having to ensure that the expansion does not overburden existing procedures.",
+            description:"Supply costs must decrease as levels of customer service rise. The list seems to go on and on, including manufacturing processes, organizational silos, industry regulations, and compliance reporting, but the solution begins here.At TekDallas, we are aware that cutting-edge technologies like artificial intelligence (AI), big data, and the internet of things (IoT) are creating a rapidly shifting environment, which means that the manufacturing sector's future will increasingly be digital. Navigating this can be time-consuming and challenging. Our skilled and seasoned team will assist you in streamlining your existing manufacturing frameworks and increasing system efficiency through enterprise application design, cutting-edge automation, management, support, and quality assurance."
+        },
+        services:[
+            {
+                icon:RiPresentationFill,
+                title:"Cost Reduction",
+                desc:"Our analytical methodologies help manufacturers identify process improvement opportunities and address cost-effective operations to save millions of dollars in manufacturing, sales, and marketing costs. "
+            },
+            {
+                icon:LiaFileInvoiceDollarSolid,
+                title:"Improve Supply Chain",
+                desc:"Ensuring that products reach customers at the right time is critical to any supply chain process. It helps streamline and automate supply chain processes, making manual tasks faster and less tedious. "
+            },
+            {
+                icon:LiaMoneyCheckAltSolid,
+                title:"Leverage Latest Technology",
+                desc:"We see a shift in technology in the way manufacturers embrace technological advancements. Be ahead of the market before your competitors implement new technology to scale and improve your results. "
+            },
+
+        ]
       },
       "energy-utilities": {
         name: "Energy & Utilities",
         description: "Powerful Solutions for efficient energy management.",
+        hero: {
+            image:ab03,
+            heading:"Utilities and energy providers in a variety of nations are confronted with cost-cutting requirements, rising customer demands, regulatory requirements, and environmental mandates.",
+            description:"In the oil and gas sector, TekDallas has a long history. TekDallas is also an expert in the business-to-business and energy sectors. We attend numerous global events related to the energy industry and actively participate in the following industry groups each year.We collaborate with numerous oil and gas industry segments across the globe with hundreds of businesses. TekDallas is well-known and respected by media outlets in a variety of industries worldwide. In addition, we are conveniently situated in major energy hubs."
+        },
+        services:[
+            {
+                icon:RiPresentationFill,
+                title:"Energy Experience and Scope",
+                desc:"Let us help you understand your options. Our staff are experienced in oil and gas, renewable energy and the energy transition. "
+            },
+            {
+                icon:LiaFileInvoiceDollarSolid,
+                title:"Full-service offering",
+                desc:"With over 100 professionals across our businesses, we assist clients with all energy issues, from mergers and acquisitions (M&A) and valuations to restructuring. "
+            },
+            {
+                icon:LiaMoneyCheckAltSolid,
+                title:"We are where you are",
+                desc:"We combine global reach with local expertise to help you achieve your goals and ambitions. "
+            },
+        ]
       },
       "life-sciences-healthcare": {
         name: "Life Sciences & Healthcare",
         description: "Supporting healthcare excellence.",
+        hero: {
+            image:ab03,
+            heading:"Our life sciences and healthcare experts can help your business grow.",
+            description:"Healthcare advancements have resulted in new treatment options, increased life expectancy, and a better ability to deal with health challenges. It is only natural that the IT systems in healthcare organisations be updated and equipped to improve productivity, better handle patients, and aid in healthcare reform.TekDallas provides IT consulting services to healthcare organisations in order to drive efficient and cost-effective patient solutions. We take a patient-centered approach to addressing healthcare challenges through strategic planning and optimal solutions."
+        },
+        services:[
+            {
+                icon:RiPresentationFill,
+                title:"Data Analysis in Healthcare",
+                desc:"Analyzing all your health data can yield interesting insights for innovation. We support data collection and analysis of patients, doctors, nurses, medical devices, etc. "
+            },
+            {
+                icon:LiaFileInvoiceDollarSolid,
+                title:"Cybersecurity in healthcare",
+                desc:"Tek Dallas provides robust, all-encompassing cybersecurity solutions that protect healthcare organisations from any device, avoiding costly ransom fees and downtime."
+            },
+            {
+                icon:LiaMoneyCheckAltSolid,
+                title:"Operational Transformation",
+                desc:"We advise, design, implement and operate industry-specific solutions and programs that transform core business processes, maximize operational efficiency and optimize capital expenditures. "
+            }
+            
+            
+        ]
       },
     };
     
@@ -65,7 +205,7 @@ export default function Industry() {
                 </div>
             </section>
 
-            <IndustryHero />
+            <IndustryHero content = {industry.hero} />
 
             <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
                 <div className="container relative">
@@ -76,7 +216,7 @@ export default function Industry() {
                     </div>
 
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                        {startupServices.map((item,index)=>{
+                        {industry.services.map((item,index)=>{
                             let Icons = item.icon
                             return(
                                 <div key={index} className="group p-6 rounded-lg shadow dark:shadow-gray-800 bg-white dark:bg-slate-900 hover:-translate-y-2 transition-all duration-500 ease-in-out">
