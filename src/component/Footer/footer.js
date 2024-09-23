@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-4 text-center">
-          <p>© 2024 Tek Dallas, All Rights Reserved.</p>
+          <p>© 2024 Exemplar Info, All Rights Reserved.</p>
         </div>
       </div>
     </footer>

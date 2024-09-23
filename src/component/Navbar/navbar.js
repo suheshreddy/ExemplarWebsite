@@ -310,12 +310,12 @@ export default function Navbar(props) {
                 </li>
 
                 <li className={manu === 'contact-one' || '' ? 'active' : ''}>
-                  <Link to="#" className="sub-menu-item">
+                  <Link to="/careers" className="sub-menu-item">
                     careers
                   </Link>
                 </li>
                 <li className={manu === 'contact-one' || '' ? 'active' : ''}>
-                  <Link to="#" className="sub-menu-item">
+                  <Link to="/about-us" className="sub-menu-item">
                     Who we are
                   </Link>
                 </li>

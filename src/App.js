@@ -21,8 +21,10 @@ import BlogGalleryPost from './pages/blog/blogGalleryPost';
 import BlogDetail from './pages/blog/blogDetail';
 import BlogBlockquotePost from './pages/blog/blogBlockquotePost';
 import BlogAudioPost from './pages/blog/blogAudioPost';
+import PageJobDetail from './pages/jobs/pageJobDetail';
 import Industry from './component/Industry';
 import PageJobCareer from './pages/jobs/pageJobCareer';
+import PageJobApply from './pages/jobs/pageJobApply';
 import WhatWeDo from './component/whatWeDo';
 import Switch from './component/Switch';
 
@@ -39,6 +41,8 @@ export default function App() {
         <Route exact path="/contact-two" element={<ContactTwo />} />
         <Route exact path="/contact-one" element={<ContactOne />} />
         <Route exact path="/contact-detail" element={<ContactDetail />} />
+        <Route exact path="/job-detail/:id" element={<PageJobDetail />} />
+        <Route exact path="/job-apply/:id" element={<PageJobApply />} />
         <Route exact path="/industries/:id" element={<Industry />} />
         <Route exact path="/what-we-do/:id" element={<WhatWeDo />} />
         <Route exact path="/contact-detail/:id" element={<ContactDetail />} />
