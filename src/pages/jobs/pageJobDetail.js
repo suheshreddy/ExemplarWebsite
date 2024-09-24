@@ -20,8 +20,8 @@ import {
 const job1 = {
   title: 'Marketing Manager',
   location: {
-    city: 'London',
-    country: 'UK',
+    city: 'Hyderabad',
+    country: 'India',
   },
   type: 'Full Time',
   company: 'Exemplar Info',
@@ -70,8 +70,8 @@ const job1 = {
 const job2 = {
   title: 'Recruitment Officer',
   location: {
-    city: 'London',
-    country: 'UK',
+    city: 'Hyderabad',
+    country: 'India',
   },
   type: 'Full Time',
   company: 'Exemplar Info',
@@ -143,9 +143,9 @@ export default function PageJobDetail() {
               <li className="inline-flex items-center text-slate-400 me-3">
                 <RiMapPinLine className="text-white h6 me-2" width={18} />
                 <span className="me-1">
-                  {data?.city ? data?.city : 'London'},
+                  {data?.city ? data?.city : 'Hyderabad'},
                 </span>
-                {data?.place ? data?.place : 'UK'} -{' '}
+                {data?.place ? data?.place : 'India'} -{' '}
                 <span className="text-white  px-1">
                   {data?.duration ? data?.duration : 'Full Time'}
                 </span>
