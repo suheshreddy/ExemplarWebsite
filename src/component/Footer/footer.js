@@ -34,9 +34,9 @@ export default function Footer() {
       <div className="container py-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img src={logo_dark} className="inline-block dark:hidden" alt="" />
-            <img src={logo_light} className="hidden dark:inline-block" alt="" />
-            <p className="mt-2">
+            {/* <img src={logo_dark} className="inline-block d" alt="" /> */}
+            <img src={logo_light} className=" dark:inline-block" alt="" />
+            <p className="mt-2 pl-2">
               300 E. Davis St,
               <br />
               McKinney, TX 75069

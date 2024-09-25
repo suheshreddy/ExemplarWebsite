@@ -11,6 +11,7 @@ import CountUp from 'react-countup';
 import MobileApp from '../../component/mobileApp';
 
 import { FaArrowRight, MdKeyboardArrowRight } from '../../assets/icons/icons';
+import Footer from '../../component/Footer/footer';
 
 export default function PageJobCareer() {
   return (
@@ -66,58 +67,19 @@ export default function PageJobCareer() {
       </div>
 
       <section className="relative md:py-24 py-16">
-        <div className="container relative mt-12">
-          <div className="grid grid-cols-2 md:grid-cols-4">
-            <div className="counter-box relative text-center">
-              <h3 className="font-extrabold lg:text-[72px] text-[50px] opacity-5">
-                <CountUp className="counter-value" end={200} start={3} />
-                +K
-              </h3>
-              <span className="counter-head font-semibold text-xl absolute top-2/4 start-0 end-0">
-                Total User
-              </span>
-            </div>
 
-            <div className="counter-box relative text-center">
-              <h3 className="font-extrabold lg:text-[72px] text-[50px] opacity-5">
-                <CountUp className="counter-value" end={15} start={1} />+
-              </h3>
-              <span className="counter-head font-semibold text-xl absolute top-2/4 start-0 end-0">
-                Years of Experience
-              </span>
-            </div>
-
-            <div className="counter-box relative text-center">
-              <h3 className="font-extrabold lg:text-[72px] text-[50px] opacity-5">
-                <CountUp className="counter-value" end={54} start={5} />5
-              </h3>
-              <span className="counter-head font-semibold text-xl absolute top-2/4 start-0 end-0">
-                Offices in the World
-              </span>
-            </div>
-
-            <div className="counter-box relative text-center">
-              <h3 className="font-extrabold lg:text-[72px] text-[50px] opacity-5">
-                <CountUp className="counter-value" end={125} start={12} />K
-              </h3>
-              <span className="counter-head font-semibold text-xl absolute top-2/4 start-0 end-0">
-                No. of Job Positions
-              </span>
-            </div>
-          </div>
-        </div>
 
         <div className="container relative md:mt-24 mt-16">
-          <div className="grid grid-cols-1 pb-8 text-center">
-            <h3 className="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-semibold">
-              Job Openings
-            </h3>
+        <div className="grid grid-cols-1 pb-8 text-center">
+  <h3 className="mb-4 md:text-[26px] md:leading-normal text-2xl leading-normal font-semibold">
+    Job Openings
+  </h3>
 
-            <p className="text-slate-400 max-w-xl mx-auto">
-              Launch your campaign and benefit from our expertise on designing
-              and managing conversion centered Tailwind css html page.
-            </p>
-          </div>
+  <p className="text-slate-400 max-w-xl mx-auto">
+    Explore exciting career opportunities and join our team of professionals dedicated to excellence. Check out our latest job openings and be part of our growing community.
+  </p>
+</div>
+
 
           <div className="lg:flex justify-center mt-8">
             <div className="lg:w-3/4">
@@ -162,7 +124,7 @@ export default function PageJobCareer() {
           </div>
         </div>
       </section>
-      <JobFooter />
+      <Footer />
     </>
   );
 }

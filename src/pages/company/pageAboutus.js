@@ -75,7 +75,7 @@ export default function PageAboutus() {
               Who We Are
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-              At <span className="font-semibold">[Your Company Name]</span>, we
+              At <span className="font-semibold">Exemplar Info</span>, we
               are a team of passionate innovators, problem-solvers, and tech
               enthusiasts, committed to transforming businesses through
               cutting-edge software solutions. Our focus is on building smarter,
@@ -90,7 +90,7 @@ export default function PageAboutus() {
               Our Journey
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-              Founded in <span className="font-semibold">[Year]</span>, we
+               We
               started with a simple yet ambitious goal: to create software that
               truly makes a difference. What began as a small, dedicated team
               has grown into a global service provider known for world-class

@@ -261,32 +261,30 @@ export default function IndexItSolution() {
               </div>
 
               <div className="grid md:grid-cols-2 grid-cols-1 mt-8 gap-[30px]">
-                <div className="px-6 py-10 shadow hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
-                  <Icon.Codesandbox className="size-12 stroke-1 text-indigo-600"></Icon.Codesandbox>
+              <div className="px-6 py-10 shadow hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
+  <Icon.Lock className="size-12 stroke-1 text-indigo-600"></Icon.Lock>
 
-                  <div className="content mt-7">
-                    <Link
-                      to="/industries/banking-and-financial-services"
-                      className="title h5 text-lg font-medium hover:text-indigo-600"
-                    >
-                      Banking & Financial Services
-                    </Link>
-                    <p className="text-slate-400 mt-3">
-                      Secure & Trusted The financial services industry depends
-                      on secure, robust solutions that support efficient
-                      operations.
-                    </p>
+  <div className="content mt-7">
+    <Link
+      to="/industries/data-security"
+      className="title h5 text-lg font-medium hover:text-indigo-600"
+    >
+      Data Security Solutions
+    </Link>
+    <p className="text-slate-400 mt-3">
+      Protect Your Data In an era where data is a critical asset, robust security solutions ensure your information is protected from unauthorized access and breaches.
+    </p>
 
-                    <div className="mt-5">
-                      <Link
-                        to="/industries/banking-and-financial-services"
-                        className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500"
-                      >
-                        Read More <FaArrowRight className="ms-2 text-[10px]" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+    <div className="mt-5">
+      <Link
+        to="/industries/data-security"
+        className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500"
+      >
+        Learn More <FaArrowRight className="ms-2 text-[10px]" />
+      </Link>
+    </div>
+  </div>
+</div>
 
                 <div className="px-6 py-10 shadow hover:shadow-md dark:shadow-gray-800 dark:hover:shadow-gray-700 transition duration-500 rounded-2xl bg-white dark:bg-slate-900">
                   <Icon.Send className="size-12 stroke-1 text-indigo-600"></Icon.Send>
@@ -438,30 +436,30 @@ export default function IndexItSolution() {
               </div>
             </div>
 
+
             <div className="md:col-span-6">
-              <div className="lg:ms-5">
-                <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">
-                  Secure & Trusted
-                </h6>
-                <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
-                  Effective Financial Services
-                  <br /> With Exemplar Info
-                </h3>
+  <div className="lg:ms-5">
+    <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">
+      Secure & Protected
+    </h6>
+    <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
+      Comprehensive Data Security
+      <br /> Solutions You Can Trust
+    </h3>
 
-                <p className="text-slate-400 max-w-xl mb-6">
-                  The financial services industry relies on secure and robust
-                  solutions designed to streamline operations and ensure
-                  efficiency.
-                </p>
+    <p className="text-slate-400 max-w-xl mb-6">
+      In today's digital world, securing sensitive information is critical. Our data security solutions provide robust protection, ensuring your data is safe from unauthorized access and cyber threats.
+    </p>
 
-                <Link
-                  to="#"
-                  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full"
-                >
-                  Get Started
-                </Link>
-              </div>
-            </div>
+    <Link
+      to="/what-we-do/cyber-security"
+      className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full"
+    >
+    Learn More
+    </Link>
+  </div>
+</div>
+
           </div>
         </div>
 
@@ -474,43 +472,42 @@ export default function IndexItSolution() {
             </div>
 
             <div className="md:col-span-6 order2 md:order-1">
-              <div className="lg:me-5">
-                <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">
-                  TAILORED COVERAGE
-                </h6>
-                <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
-                  Insurance Solutions for Every Need
-                </h3>
+  <div className="lg:me-5">
+    <h6 className="text-indigo-600 text-sm font-bold uppercase mb-2">
+      AFFORDABLE PLANS
+    </h6>
+    <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
+      Budget Friendly Solutions for Every Need
+    </h3>
 
-                <p className="text-slate-400 max-w-xl">
-                  Leverage expert solutions tailored to the insurance industry's
-                  standards, offering comprehensive protection for businesses
-                  and individuals.
-                </p>
+    <p className="text-slate-400 max-w-xl">
+      Access cost-effective solutions designed to meet your financial goals without compromising on quality, offering the perfect balance of affordability and efficiency.
+    </p>
 
-                <ul className="list-none text-slate-400 my-6">
-                  <li className="mb-1 flex items-center ms-0">
-                    <BsCheckCircle className="text-indigo-600 text-base me-2" />{' '}
-                    Customized Coverage Options for All Industries
-                  </li>
-                  <li className="mb-1 flex items-center ms-0">
-                    <BsCheckCircle className="text-indigo-600 text-base me-2" />{' '}
-                    Experienced Professionals with Deep Industry Expertise
-                  </li>
-                  <li className="mb-1 flex items-center ms-0">
-                    <BsCheckCircle className="text-indigo-600 text-base me-2" />{' '}
-                    Scalable Solutions Designed for Your Growth
-                  </li>
-                </ul>
+    <ul className="list-none text-slate-400 my-6">
+      <li className="mb-1 flex items-center ms-0">
+        <BsCheckCircle className="text-indigo-600 text-base me-2" />{' '}
+        Flexible Plans to Fit Any Budget
+      </li>
+      <li className="mb-1 flex items-center ms-0">
+        <BsCheckCircle className="text-indigo-600 text-base me-2" />{' '}
+        Expert Assistance Tailored to Your Needs
+      </li>
+      <li className="mb-1 flex items-center ms-0">
+        <BsCheckCircle className="text-indigo-600 text-base me-2" />{' '}
+        Scalable Solutions That Grow With You
+      </li>
+    </ul>
 
-                <Link
-                  to="#"
-                  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full"
-                >
-                  Get Started
-                </Link>
-              </div>
-            </div>
+    <Link
+      to="/contact-one"
+      className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle transition duration-500 ease-in-out text-base text-center bg-indigo-600/5 hover:bg-indigo-600 border-indigo-600/10 hover:border-indigo-600 text-indigo-600 hover:text-white rounded-full"
+    >
+      Get Started
+    </Link>
+  </div>
+</div>
+
           </div>
         </div>
       </section>

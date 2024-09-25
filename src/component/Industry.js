@@ -56,6 +56,7 @@ export default function Industry() {
   const industries = {
     'banking-and-financial-services': {
       name: 'Banking & Financial Services',
+      heroImage:"../../assets/images/industry/industry-banking-hero.jpg",
       description: 'Secure & Trusted financial services.',
       hero: {
         image: ab03,
@@ -84,6 +85,7 @@ export default function Industry() {
     },
     insurance: {
       name: 'Insurance',
+      heroImage:"../../assets/images/industry/industry-insurance-hero.jpg",
       description: 'Comprehensive Coverage tailored for insurance needs.',
       hero: {
         image: ab03,
@@ -112,6 +114,7 @@ export default function Industry() {
     },
     'retail-and-consumer-goods': {
       name: 'Retail & CPG',
+      heroImage:"../../assets/images/industry/industry-retail-hero.jpg",
       description: 'Retail Innovation with cutting-edge solutions.',
       hero: {
         image: ab03,
@@ -140,6 +143,7 @@ export default function Industry() {
     },
     manufacturing: {
       name: 'Manufacturing',
+      heroImage:"../../assets/images/industry/industry-manufacturing-hero.jpg",
       description: 'Advanced solutions for modern manufacturing.',
       hero: {
         image: ab03,
@@ -168,6 +172,7 @@ export default function Industry() {
     },
     'energy-utilities': {
       name: 'Energy & Utilities',
+      heroImage:"../../assets/images/industry/industry-energyhero.jpg",
       description: 'Powerful Solutions for efficient energy management.',
       hero: {
         image: ab03,
@@ -197,6 +202,7 @@ export default function Industry() {
     'life-sciences-healthcare': {
       name: 'Life Sciences & Healthcare',
       description: 'Supporting healthcare excellence.',
+      heroImage:"../../assets/images/industry/industry-lefescience-hero.jpg",
       hero: {
         image: ab03,
         heading:
@@ -230,12 +236,12 @@ export default function Industry() {
     <>
       <Navbar navClass="nav-light" />
 
-      <section className="relative table w-full py-32 bg-[url('../../assets/images/company/aboutus.jpg')] bg-center bg-no-repeat bg-cover">
+{id.toLowerCase() === 'life-sciences-healthcare' &&       <section className="relative table w-full py-32 bg-[url('../../assets/images/industry/industry-banking-hero.jpg')] bg-center bg-no-repeat bg-cover">
         <div className="absolute inset-0 bg-black opacity-75"></div>
         <div className="container relative">
           <div className="grid grid-cols-1 pb-8 text-center mt-10">
             <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
-              Contact Us
+            Industry
             </h3>
           </div>
         </div>
@@ -252,12 +258,153 @@ export default function Industry() {
               className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
               aria-current="page"
             >
-              Contact Us
+              {industry.name}
             </li>
           </ul>
         </div>
-      </section>
+      </section> }
 
+
+
+      {id.toLowerCase() === 'energy-utilities' &&       <section className="relative table w-full py-32 bg-[url('../../assets/images/industry/industry-energyhero.jpg')] bg-center bg-no-repeat bg-cover">
+        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="container relative">
+          <div className="grid grid-cols-1 pb-8 text-center mt-10">
+            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
+            Industry
+            </h3>
+          </div>
+        </div>
+
+        <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+          <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
+            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+              <Link to="/index">Exemplar Info</Link>
+            </li>
+            <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180">
+              <MdKeyboardArrowRight className="text-xl" />
+            </li>
+            <li
+              className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+              aria-current="page"
+            >
+              {industry.name}
+            </li>
+          </ul>
+        </div>
+      </section> }
+
+      {id.toLowerCase() === 'manufacturing' &&       <section className="relative table w-full py-32 bg-[url('../../assets/images/industry/industry-manufacturing-hero.jpg')] bg-center bg-no-repeat bg-cover">
+        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="container relative">
+          <div className="grid grid-cols-1 pb-8 text-center mt-10">
+            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
+            Industry
+            </h3>
+          </div>
+        </div>
+
+        <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+          <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
+            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+              <Link to="/index">Exemplar Info</Link>
+            </li>
+            <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180">
+              <MdKeyboardArrowRight className="text-xl" />
+            </li>
+            <li
+              className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+              aria-current="page"
+            >
+              {industry.name}
+            </li>
+          </ul>
+        </div>
+      </section> }
+
+      {id.toLowerCase() === 'retail-and-consumer-goods' &&       <section className="relative table w-full py-32 bg-[url('../../assets/images/industry/industry-retail-hero.jpg')] bg-center bg-no-repeat bg-cover">
+        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="container relative">
+          <div className="grid grid-cols-1 pb-8 text-center mt-10">
+            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
+            Industry
+            </h3>
+          </div>
+        </div>
+
+        <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+          <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
+            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+              <Link to="/index">Exemplar Info</Link>
+            </li>
+            <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180">
+              <MdKeyboardArrowRight className="text-xl" />
+            </li>
+            <li
+              className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+              aria-current="page"
+            >
+              {industry.name}
+            </li>
+          </ul>
+        </div>
+      </section> }
+      {id.toLowerCase() === 'insurance' &&       <section className="relative table w-full py-32 bg-[url('../../assets/images/industry/industry-insurance-hero.jpg')] bg-center bg-no-repeat bg-cover">
+        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="container relative">
+          <div className="grid grid-cols-1 pb-8 text-center mt-10">
+            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
+            Industry
+            </h3>
+          </div>
+        </div>
+
+        <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+          <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
+            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+              <Link to="/index">Exemplar Info</Link>
+            </li>
+            <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180">
+              <MdKeyboardArrowRight className="text-xl" />
+            </li>
+            <li
+              className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+              aria-current="page"
+            >
+              {industry.name}
+            </li>
+          </ul>
+        </div>
+      </section> }
+
+      {id.toLowerCase() === 'banking-and-financial-services' &&       <section className="relative table w-full py-32 bg-[url('../../assets/images/industry/industry-banking-hero.jpg')] bg-center bg-no-repeat bg-cover">
+        <div className="absolute inset-0 bg-black opacity-75"></div>
+        <div className="container relative">
+          <div className="grid grid-cols-1 pb-8 text-center mt-10">
+            <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
+            Industry
+            </h3>
+          </div>
+        </div>
+
+        <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+          <ul className="tracking-[0.5px] mb-0 inline-flex space-x-1">
+            <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
+              <Link to="/index">Exemplar Info</Link>
+            </li>
+            <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180">
+              <MdKeyboardArrowRight className="text-xl" />
+            </li>
+            <li
+              className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white"
+              aria-current="page"
+            >
+              {industry.name}
+            </li>
+          </ul>
+        </div>
+      </section> }
+      
       <IndustryHero content={industry.hero} />
 
       <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
