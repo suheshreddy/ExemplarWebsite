@@ -241,7 +241,7 @@ export default function IndexLandingOne() {
         <MobileApp />
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

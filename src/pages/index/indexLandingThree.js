@@ -317,7 +317,7 @@ export default function IndexLandingThree() {
       </section>
 
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

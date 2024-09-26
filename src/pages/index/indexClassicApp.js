@@ -307,7 +307,7 @@ export default function IndexClassicApp() {
                 <MobileApp/>
             </section>
             <TransparentFooter/>
-            <CookieModal />
+      
         </>
     )
 }

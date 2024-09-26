@@ -336,7 +336,7 @@ export default function LifeCoach() {
         <Blog className="container relative" />
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

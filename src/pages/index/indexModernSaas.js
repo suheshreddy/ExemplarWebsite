@@ -296,7 +296,7 @@ export default function IndexModernSaas() {
       </section>
 
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

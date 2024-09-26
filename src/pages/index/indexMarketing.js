@@ -564,7 +564,7 @@ export default function IndexMarketing() {
         </div>
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

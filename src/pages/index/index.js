@@ -425,7 +425,7 @@ export default function Index() {
 
       <Footer />
 
-      <CookieModal />
+
     </div>
   );
 }

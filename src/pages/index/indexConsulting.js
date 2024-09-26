@@ -400,7 +400,7 @@ export default function IndexConsulting() {
         <ManagementTeam className="relative md:mt-24 mt-16" id={''} />
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

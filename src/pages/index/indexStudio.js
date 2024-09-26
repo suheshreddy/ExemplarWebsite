@@ -550,7 +550,7 @@ export default function IndexStudio() {
         </div>
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

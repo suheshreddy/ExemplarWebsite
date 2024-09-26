@@ -249,7 +249,7 @@ export default function IndexSmartwatch() {
             </section>
             <Footer />
 
-            <CookieModal />
+      
         </>
     )
 }

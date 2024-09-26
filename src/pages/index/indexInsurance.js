@@ -519,7 +519,7 @@ export default function IndexInsurance() {
 
       <Blog className="container relative md:mt-24 mt-16 mb-16" id={''} />
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

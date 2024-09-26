@@ -302,7 +302,7 @@ className="py-2 px-5 inline-block font-semibold tracking-wide border align-middl
                 </div>
             </div>
             <CafeFooter/>
-            <CookieModal />
+      
 
         </>
     )

@@ -537,7 +537,7 @@ export default function IndexDigitalAgency() {
         ''
       )}
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

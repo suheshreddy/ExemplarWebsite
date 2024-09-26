@@ -462,7 +462,7 @@ export default function IndexShop() {
         <MobileApp />
       </section>
       <ShopFooter />
-      <CookieModal />
+
     </>
   );
 }

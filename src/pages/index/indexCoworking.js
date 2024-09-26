@@ -606,7 +606,7 @@ export default function IndexCoworking() {
         ''
       )}
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

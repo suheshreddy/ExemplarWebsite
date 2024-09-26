@@ -276,7 +276,7 @@ export default function IndexLandingTwo() {
         <GetInTuch title={true} />
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

@@ -625,7 +625,7 @@ export default function IndexLaw() {
         ]}
       />
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

@@ -291,7 +291,7 @@ export default function IndexCorporate() {
         <Blog className="container relative md:mt-24 mt-16" />
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

@@ -785,7 +785,7 @@ export default function IndexHosting() {
       </section>
 
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

@@ -661,7 +661,7 @@ export default function IndexSoftware() {
       </section>
 
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

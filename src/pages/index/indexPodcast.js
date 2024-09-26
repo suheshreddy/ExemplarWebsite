@@ -576,7 +576,7 @@ export default function IndexPodcast() {
         <GetInTuch title={true} />
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

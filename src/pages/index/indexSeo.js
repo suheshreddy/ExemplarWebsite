@@ -257,7 +257,7 @@ export default function IndexSeo() {
             </section>
 
             <Footer />
-            <CookieModal />
+      
         </>
     )
 }

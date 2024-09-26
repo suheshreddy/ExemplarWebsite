@@ -2298,7 +2298,7 @@ export default function IndexAi() {
         <MobileApp />
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

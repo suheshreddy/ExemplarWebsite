@@ -438,7 +438,7 @@ export default function IndexCharity() {
 
       <Footer />
 
-      <CookieModal />
+
     </>
   );
 }

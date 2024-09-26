@@ -214,7 +214,7 @@ export default function IndexSpa() {
                 </div>
             </section>
             <Footer />
-            <CookieModal />
+      
         </>
     )
 }

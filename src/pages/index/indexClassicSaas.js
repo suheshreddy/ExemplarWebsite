@@ -321,7 +321,7 @@ export default function IndexClassicSaas() {
       </section>
       <MobileApp />
       <Footer />
-      <CookieModal />
+
     </div>
   );
 }

@@ -392,7 +392,7 @@ export default function IndexTravel() {
           </div>
         </div>
       </section>
-      <CookieModal />
+
       <Footer />
     </>
   );

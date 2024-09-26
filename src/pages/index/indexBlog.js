@@ -232,7 +232,7 @@ export default function IndexBlog() {
 
             <Footer />
 
-            <CookieModal /> 
+       
 
         </>
     )

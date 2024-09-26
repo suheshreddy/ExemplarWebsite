@@ -595,7 +595,7 @@ export default function IndexFoodBlog() {
         </div>
       </div>
       <SmallFooter />
-      <CookieModal />
+
     </>
   );
 }

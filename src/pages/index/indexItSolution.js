@@ -120,11 +120,7 @@ export default function IndexItSolution() {
                   We Accelerate Your Business With <br />
                   Perfection{' '}
                 </h4>
-                <p className="text-white/60 text-lg max-w-xl">
-                  We adopt industry-specific software testing models for the
-                  desired quality and delivery of the best solution at minimum
-                  risk
-                </p>
+              
               </div>
             </div>
 
@@ -266,7 +262,7 @@ export default function IndexItSolution() {
 
   <div className="content mt-7">
     <Link
-      to="/industries/data-security"
+      to="/what-we-do/cyber-security"
       className="title h5 text-lg font-medium hover:text-indigo-600"
     >
       Data Security Solutions
@@ -277,7 +273,7 @@ export default function IndexItSolution() {
 
     <div className="mt-5">
       <Link
-        to="/industries/data-security"
+        to="/what-we-do/cyber-security"
         className="relative inline-flex items-center font-semibold tracking-wide align-middle text-base text-center border-none after:content-[''] after:absolute after:h-px after:w-0 hover:after:w-full after:end-0 hover:after:end-auto after:bottom-0 after:start-0 after:duration-500 text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500"
       >
         Learn More <FaArrowRight className="ms-2 text-[10px]" />
@@ -513,7 +509,7 @@ export default function IndexItSolution() {
       </section>
 
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

@@ -440,7 +440,7 @@ export default function IndexForums() {
         </div>
       </section>
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

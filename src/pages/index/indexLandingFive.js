@@ -424,7 +424,7 @@ export default function IndexLandingFive() {
       </section>
 
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

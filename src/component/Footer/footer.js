@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             {/* <img src={logo_dark} className="inline-block d" alt="" /> */}
-            <img src={logo_light} className=" dark:inline-block" alt="" />
+            <img src={logo_light} className="dark:inline-block" alt="" />
             <p className="mt-2 pl-2">
               300 E. Davis St,
               <br />
@@ -44,8 +44,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-cyan-400 font-semibold mb-4">DROP US A LINE</h3>
-            <p>6268424232</p>
+            <h3 className="text-cyan-400 font-semibold mb-4 uppercase">Give Us a Ring</h3>
+            <p>626-842-4232</p>
 
             <h3 className="text-cyan-400 font-semibold mt-4 mb-2">
               SHOOT US A MESSAGE
@@ -97,18 +97,11 @@ export default function Footer() {
           <div>
             <h3 className="text-cyan-400 font-semibold mb-4">FOLLOW US</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-cyan-400">
-                <FaFacebookF />
+     
+              <a href="https://www.linkedin.com/company/exemplar-info/" className="text-gray-300 hover:text-cyan-400">
+                <FaLinkedin  className='h-10 w-10'/>
               </a>
-              <a href="#" className="text-gray-300 hover:text-cyan-400">
-                <FaTwitter />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-cyan-400">
-                <FaLinkedin />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-cyan-400">
-                <FaInstagram />
-              </a>
+             
             </div>
           </div>
         </div>

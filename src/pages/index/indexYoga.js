@@ -849,7 +849,7 @@ export default function IndexYoga() {
         </div>
       </div>
       <FooterTwo />
-      <CookieModal />
+
     </>
   );
 }

@@ -556,7 +556,7 @@ export default function IndexGym() {
       </section>
 
       <FooterTwo />
-      <CookieModal />
+
     </>
   );
 }

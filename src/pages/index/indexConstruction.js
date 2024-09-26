@@ -285,7 +285,7 @@ export default function IndexConstruction() {
 
       <ManagementTeam className="relative md:py-24 py-16" id={''} />
       <Footer />
-      <CookieModal />
+
     </>
   );
 }

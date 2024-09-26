@@ -487,7 +487,7 @@ export default function IndexCourse() {
 
             <Footer />
 
-            <CookieModal />
+      
         </div>
     )
 }

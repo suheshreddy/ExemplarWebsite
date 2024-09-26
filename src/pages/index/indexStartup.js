@@ -238,7 +238,7 @@ export default function IndexStartup() {
 
       <SmallFooter />
 
-      <CookieModal />
+
     </>
   );
 }

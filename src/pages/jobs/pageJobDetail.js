@@ -16,6 +16,7 @@ import {
   jobNice,
   jobBenefits,
 } from '../../data/dataFive';
+import Footer from '../../component/Footer/footer';
 
 const job1 = {
   title: 'Marketing Manager',
@@ -26,6 +27,8 @@ const job1 = {
   type: 'Full Time',
   company: 'Exemplar Info',
   description: {
+    summary: "We are seeking a skilled and innovative Marketing Manager to join our team. The ideal candidate will be responsible for developing and implementing strategies that promote the visibility and adoption of our products. You will work closely with cross-functional teams to align marketing initiatives with business goals and drive growth across diverse markets.",
+
     vision:
       'Our vision is to provide the next billion people with access to products that exemplify the ideals of Exemplar Info. These ideals - which include peer-to-peer transactions, decentralization, censorship resistance, and permissionless-ness - support economic freedom.',
     approach:
@@ -76,6 +79,8 @@ const job2 = {
   type: 'Full Time',
   company: 'Exemplar Info',
   description: {
+    summary: "We are looking for a motivated and detail-oriented Recruitment Officer to join our HR team. The Recruitment Officer will be responsible for attracting, sourcing, and hiring top talent for our organization. You will collaborate closely with department heads to identify hiring needs, develop job descriptions, and manage the entire recruitment process from sourcing candidates to onboarding.",
+
     vision:
       'Our vision is to provide the next billion people with access to products that exemplify the ideals of Exemplar Info. These ideals - which include peer-to-peer transactions, decentralization, censorship resistance, and permissionless-ness - support economic freedom.',
     approach:
@@ -200,20 +205,10 @@ export default function PageJobDetail() {
               <h5 className="mb-4 font-medium text-xl">Description:</h5>
 
               <p className="text-slate-400 mb-4">
-                Our vision is to provide the next billion people with access to
-                products that exemplify the ideals of Exemplar Info. These
-                ideals - which include peer-to-peer transactions,
-                decentralization, censorship resistance, and permissionless-ness
-                - support economic freedom.
+               {data?.description?.summary}
               </p>
 
-              <p className="text-slate-400 mb-4">
-                Our approach is to develop and promote widely accessible
-                products that support economic freedom. For example, our digital
-                wallet - which has 16 million downloads - provides people with
-                an easy-to-use, non-custodial method for buying, selling,
-                storing, sending, receiving, and trading cryptocurrencies.
-              </p>
+
 
               <h5 className="mb-4 mt-6 font-medium text-xl">Duties:</h5>
 
@@ -303,18 +298,19 @@ export default function PageJobDetail() {
               </p>
 
               <div className="mt-6">
-                <Link
-                  to="page-job-apply"
-                  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
-                >
-                  Apply now
-                </Link>
+              <a
+      href={`mailto:jobs@example.com?subject=Application%20for%20${data?.title}`}
+      className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
+    >
+      Apply now
+    </a>
+
               </div>
             </div>
           </div>
         </div>
       </section>
-      <JobFooter />
+      <Footer />
     </>
   );
 }

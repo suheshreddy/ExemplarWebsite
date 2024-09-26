@@ -189,7 +189,7 @@ export default function IndexHotel() {
                 <Blog className="container relative md:mt-24 mt-16" id={""} />
             </section>
             <Footer />
-            <CookieModal />
+      
        
 
          

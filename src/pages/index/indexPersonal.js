@@ -327,7 +327,7 @@ export default function IndexPersonal() {
                     </div>
             </section>
            <SmallFooter/>
-            <CookieModal />
+      
         </>
     )
 }

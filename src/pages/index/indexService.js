@@ -477,7 +477,7 @@ export default function IndexService() {
       </section>
 
       <Footer />
-      <CookieModal />
+
     </>
   );
 }
