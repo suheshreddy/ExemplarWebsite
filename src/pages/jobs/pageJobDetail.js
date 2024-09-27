@@ -27,7 +27,8 @@ const job1 = {
   type: 'Full Time',
   company: 'Exemplar Info',
   description: {
-    summary: "We are seeking a skilled and innovative Marketing Manager to join our team. The ideal candidate will be responsible for developing and implementing strategies that promote the visibility and adoption of our products. You will work closely with cross-functional teams to align marketing initiatives with business goals and drive growth across diverse markets.",
+    summary:
+      'We are seeking a skilled and innovative Marketing Manager to join our team. The ideal candidate will be responsible for developing and implementing strategies that promote the visibility and adoption of our products. You will work closely with cross-functional teams to align marketing initiatives with business goals and drive growth across diverse markets.',
 
     vision:
       'Our vision is to provide the next billion people with access to products that exemplify the ideals of Exemplar Info. These ideals - which include peer-to-peer transactions, decentralization, censorship resistance, and permissionless-ness - support economic freedom.',
@@ -63,10 +64,6 @@ const job1 = {
     'Remote work',
     'Health insurance reimbursement',
     'Wellness program (gym, etc.)',
-    'Yoga classes',
-    'Japanese classes',
-    'Permanent employment status (正社員) and the option to be paid in yen for employees residing in Japan',
-    'Employees residing outside of Japan are classified as Independent Contractors and are paid in the cryptocurrency of their choice',
   ],
 };
 
@@ -79,7 +76,8 @@ const job2 = {
   type: 'Full Time',
   company: 'Exemplar Info',
   description: {
-    summary: "We are looking for a motivated and detail-oriented Recruitment Officer to join our HR team. The Recruitment Officer will be responsible for attracting, sourcing, and hiring top talent for our organization. You will collaborate closely with department heads to identify hiring needs, develop job descriptions, and manage the entire recruitment process from sourcing candidates to onboarding.",
+    summary:
+      'We are looking for a motivated and detail-oriented Recruitment Officer to join our HR team. The Recruitment Officer will be responsible for attracting, sourcing, and hiring top talent for our organization. You will collaborate closely with department heads to identify hiring needs, develop job descriptions, and manage the entire recruitment process from sourcing candidates to onboarding.',
 
     vision:
       'Our vision is to provide the next billion people with access to products that exemplify the ideals of Exemplar Info. These ideals - which include peer-to-peer transactions, decentralization, censorship resistance, and permissionless-ness - support economic freedom.',
@@ -116,10 +114,6 @@ const job2 = {
     'Remote work',
     'Health insurance reimbursement',
     'Wellness program (gym, etc.)',
-    'Yoga classes',
-    'Japanese classes',
-    'Permanent employment status (正社員) and the option to be paid in yen for employees residing in Japan',
-    'Employees residing outside of Japan are classified as Independent Contractors and are paid in the cryptocurrency of their choice',
   ],
 };
 
@@ -205,22 +199,20 @@ export default function PageJobDetail() {
               <h5 className="mb-4 font-medium text-xl">Description:</h5>
 
               <p className="text-slate-400 mb-4">
-               {data?.description?.summary}
+                {data?.description?.summary}
               </p>
-
-
 
               <h5 className="mb-4 mt-6 font-medium text-xl">Duties:</h5>
 
               <ul className="list-none mb-0">
-                {jobDuties.map((data) => {
+                {data?.duties?.map((data) => {
                   return (
                     <li className="text-slate-400 flex mt-2">
                       <Icon.ArrowRight
                         width={16}
                         className="text-indigo-600 h5 mb-0 me-2"
                       ></Icon.ArrowRight>{' '}
-                      {data.desc}
+                      {data}
                     </li>
                   );
                 })}
@@ -229,14 +221,14 @@ export default function PageJobDetail() {
               <h5 className="mb-4 mt-6 font-medium text-xl">Requirements</h5>
 
               <ul className="list-none mb-0">
-                {jobRequirements.map((data, index) => {
+                {data?.requirements?.mustHave.map((data, index) => {
                   return (
                     <li key={index} className="text-slate-400 flex mt-2">
                       <Icon.ArrowRight
                         width={16}
                         className="text-indigo-600 h5 mb-0 me-2"
                       ></Icon.ArrowRight>{' '}
-                      {data.desc}
+                      {data}
                     </li>
                   );
                 })}
@@ -245,66 +237,40 @@ export default function PageJobDetail() {
               <h5 className="mb-4 mt-6 font-medium text-xl">Nice To Have</h5>
 
               <ul className="list-none mb-0">
-                {jobNice.map((data, index) => {
+                {data?.requirements?.niceToHave.map((data, index) => {
                   return (
                     <li key={index} className="text-slate-400 flex mt-2">
                       <Icon.ArrowRight
                         width={16}
                         className="text-indigo-600 h5 mb-0 me-2"
                       ></Icon.ArrowRight>{' '}
-                      {data.desc}
+                      {data}
                     </li>
                   );
                 })}
               </ul>
 
               <h5 className="mb-4 mt-6 font-medium text-xl">Benefits</h5>
-              <p className="text-slate-400 mb-4">
-                Bitcoin.com is paving the way for the next generation of
-                financial technology products and platforms. We're bringing
-                cryptocurrency and the future of money to the masses. We’d love
-                to have you on board.
-              </p>
 
-              <p className="text-slate-400 mb-4">
-                We are serious about what we do, but more importantly, we have a
-                lot of fun doing it. Our work culture is modern, meaning we
-                strive for work experiences based on transparency, productivity,
-                trust, and passion. For all employees, benefits include:
-              </p>
-              <ul className="list-none mb-4">
-                {jobBenefits.map((data, index) => {
-                  return (
-                    <li key={index} className="text-slate-400 flex mt-2">
-                      <Icon.ArrowRight
-                        width={16}
-                        className="text-indigo-600 h5 mb-0 me-2"
-                      ></Icon.ArrowRight>{' '}
-                      {data.desc}
-                    </li>
-                  );
-                })}
-              </ul>
-
-              <p className="text-slate-400 mb-4">
-                For employees residing in Japan, we offer "permanent employment"
-                status (正社員) and the option to be paid in yen.
-              </p>
-
-              <p className="text-slate-400 mb-4">
-                Employees residing outside of Japan are classified as
-                Independent Contractors and are paid in the cryptocurrency of
-                their choice.
-              </p>
+              {data?.benefits.map((data, index) => {
+                return (
+                  <p key={index} className="text-slate-400 flex mt-2">
+                    <Icon.ArrowRight
+                      width={16}
+                      className="text-indigo-600 h5 mb-0 me-2"
+                    ></Icon.ArrowRight>{' '}
+                    {data}
+                  </p>
+                );
+              })}
 
               <div className="mt-6">
-              <a
-      href={`mailto:jobs@example.com?subject=Application%20for%20${data?.title}`}
-      className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
-    >
-      Apply now
-    </a>
-
+                <a
+                  href={`mailto:jobs@example.com?subject=Application%20for%20${data?.title}`}
+                  className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
+                >
+                  Apply now
+                </a>
               </div>
             </div>
           </div>

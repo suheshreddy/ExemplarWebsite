@@ -20,6 +20,8 @@ export default function WhatweDoFilter({ content }) {
     (item) => item.category === selectedCategory
   );
 
+  console.log('hallo', content[0].category, filteredData);
+
   return (
     <section className="relative md:py-24 py-16">
       <div className="container relative">
@@ -46,24 +48,50 @@ export default function WhatweDoFilter({ content }) {
           </div>
         </div>
         <div className="filtered-content-container">
-          {filteredData.map((data, index) => (
-            <div key={index} className="picture-item">
-              <div className="group relative gap-4 flex overflow-hidden rounded-md transition-all duration-500">
-                <Link to="/portfolio-detail-one" className="w-2/5 object-cover">
-                  <img
-                    src={data.image}
-                    className="rounded-md"
-                    alt={data.title}
-                  />
-                </Link>
-                <div className="content pt-3 w-3/5 flex-1">
-                  <h6 className="text-slate-400 text-lg lg:text-xl">
-                    {data.description || 'Description coming soon.'}
-                  </h6>
+          {filteredData.length > 0 &&
+            filteredData.map((data, index) => (
+              <div key={index} className="picture-item">
+                <div className="group relative gap-4 flex overflow-hidden rounded-md transition-all duration-500">
+                  <Link
+                    to="/portfolio-detail-one"
+                    className="w-2/5 object-cover"
+                  >
+                    <img
+                      src={data.image}
+                      className="rounded-md"
+                      alt={data.title}
+                    />
+                  </Link>
+                  <div className="content pt-3 w-3/5 flex-1">
+                    <h6 className="text-slate-400 text-lg lg:text-xl">
+                      {data.description || 'Description coming soon.'}
+                    </h6>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          {!filteredData.length > 0 &&
+            content.map((data, index) => (
+              <div key={index} className="picture-item">
+                <div className="group relative gap-4 flex overflow-hidden rounded-md transition-all duration-500">
+                  <Link
+                    to="/portfolio-detail-one"
+                    className="w-2/5 object-cover"
+                  >
+                    <img
+                      src={data.image}
+                      className="rounded-md"
+                      alt={data.title}
+                    />
+                  </Link>
+                  <div className="content pt-3 w-3/5 flex-1">
+                    <h6 className="text-slate-400 text-lg lg:text-xl">
+                      {data.description || 'Description coming soon.'}
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            ))}
         </div>
       </div>
     </section>
