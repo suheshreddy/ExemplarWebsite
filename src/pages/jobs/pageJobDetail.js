@@ -266,7 +266,7 @@ export default function PageJobDetail() {
 
               <div className="mt-6">
                 <a
-                  href={`mailto:jobs@example.com?subject=Application%20for%20${data?.title}`}
+                  href={`mailto:hr@exemplarinfo.com?subject=Application%20for%20${data?.title}`}
                   className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
                 >
                   Apply now
