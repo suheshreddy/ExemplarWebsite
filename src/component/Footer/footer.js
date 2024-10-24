@@ -67,17 +67,17 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/industries" className="hover:text-cyan-400">
+                <Link to="/industries/banking-and-financial-services" className="hover:text-cyan-400">
                   Industries
                 </Link>
               </li>
               <li>
-                <Link to="/who-we-are" className="hover:text-cyan-400">
+                <Link to="/about-us" className="hover:text-cyan-400">
                   Who We Are
                 </Link>
               </li>
               <li>
-                <Link to="/what-we-do" className="hover:text-cyan-400">
+                <Link to="/what-we-do/applications-integration" className="hover:text-cyan-400">
                   What We Do
                 </Link>
               </li>
@@ -87,7 +87,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/contact-us" className="hover:text-cyan-400">
+                <Link to="/contact-one" className="hover:text-cyan-400">
                   Contact Us
                 </Link>
               </li>
